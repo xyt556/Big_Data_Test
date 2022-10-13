@@ -10,7 +10,8 @@ from __future__ import print_function
 from sklearn import preprocessing
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.datasets.samples_generator import make_classification
+# from sklearn.datasets.samples_generator import make_classification
+from sklearn.datasets import make_blobs, make_classification
 from sklearn.svm import SVC
 import matplotlib.pyplot as plt
 
