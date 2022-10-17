@@ -9,7 +9,7 @@ if __name__ == "__main__":
     data = np.array(df)
     print(data)
 
-    pca = pc.PCA(n_components=1)
+    pca = pc.PCA(n_components=2)
     pca.fit(data,rowvar=False)
     res = pca.transform(data,rowvar=False)
     ratio = pca.variance_ratio(only=True)

@@ -23,7 +23,10 @@ y = 2*x + 1
 
 plt.figure(num=1, figsize=(8, 5),)
 plt.plot(x, y,)
-
+'''“当前的图表和子图可以使用plt.gcf()和plt.gca()获得,分别表示Get Current Figure和Get Current Axes。
+在pyplot模块中,许多函数都是对当前的Figure或Axes对象进行处理,
+比如说:plt.plot()实际上会通过plt.gca()获得当前的Axes对象ax,然后再调用ax.plot()方法实现真正的绘图。
+'''
 ax = plt.gca()
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')

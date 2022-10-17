@@ -16,4 +16,8 @@ x = np.linspace(-1, 1, 50)
 y = 2*x + 1
 # y = x**2
 plt.plot(x, y)
+plt.scatter(x,y,)
+# 保存图片
+plt.savefig('plt3_simple_plot.jpg',dpi = 300, bbox_inches = 'tight')
 plt.show()
+
