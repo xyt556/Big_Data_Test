@@ -4,6 +4,10 @@ from sklearn.decomposition import PCA
 import pandas as pd
 if __name__ == "__main__":
     data = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
+    df = pd.read_excel(r'.\data.xlsx',sheet_name= '因子分析2', header= 0, index_col= '编号')
+    print(df)
+    data = np.array(df)
+    print(data)
 
     pca = pc.PCA(n_components=1)
     pca.fit(data,rowvar=False)
