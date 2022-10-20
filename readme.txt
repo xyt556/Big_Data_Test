@@ -49,7 +49,8 @@ $ pip install ‘Markdown>2.0,<2.0.3’
 下载对应模块.whl文件，在CMD->cd命令下进入到.whl文件所在目录，如果pip目录未添加到环境变量，最好把.whl文件放置到pip.exe所在目录（D:\Python2.7\Scripts\）。
 
 安装： pip install 包名.whl
-
+下载地址：
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
 方法6：.exe文件自定义安装
 下载对应版本的exe安装文件，如numpy-1.9.2-win32-superpack-python2.7.exe和mlpy-3.5.0.win32-py2.7.exe
 安装：打开自动安装即可
