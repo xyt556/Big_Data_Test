@@ -4,6 +4,20 @@ pip install -r requirements.txt
 plt.rcParams['font.sans-serif'] = ['SimHei']     # 用来显示中文标签
 plt.rcParams['axes.unicode_minus'] = False       # 用来正常显示负号
 
+使用pip安装某些库可能速度较慢，可以考虑使用国内镜像，
+常见pip国内的一些镜像如下：
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+豆瓣(douban) http://pypi.douban.com/simple/
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+使用方法：
+在使用pip的时候在后面加上-i参数，指定pip源
+pip install tensorflow_gpu==1.12.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+原文链接：
+https://www.cnblogs.com/jokerjason/p/9459234.html
+
+
 python安装库的六种方法
 方法1： 单文件模块
 直接把文件拷贝到 $python_dir/Lib
