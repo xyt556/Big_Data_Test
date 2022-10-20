@@ -13,6 +13,6 @@ data = pd.read_csv('student.csv')
 print(data)
 
 # save to
-print(os.stat('student.csv').st_size/(1024 * 1024))
+print(os.stat('student.csv').st_size / (1024 * 1024))
 data.to_pickle('student.pickle')
-print(os.stat('student.pickle').st_size/(1024 * 1024))
+print(os.stat('student.pickle').st_size / (1024 * 1024))
