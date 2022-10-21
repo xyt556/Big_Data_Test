@@ -34,7 +34,7 @@ pip install tensorflow_gpu==1.12.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 安裝：pip install PackageName
-
+---------------------
 pip常用命令
 列出安装的packages:pip freeze
 安装特定版本的package:通过使用==, >=, <=, >, <来指定一个版本号
