@@ -4,6 +4,7 @@ pip install -r requirements.txt
 plt.rcParams['font.sans-serif'] = ['SimHei']     # 用来显示中文标签
 plt.rcParams['axes.unicode_minus'] = False       # 用来正常显示负号
 
+
 python安装库的六种方法
 方法1： 单文件模块
 直接把文件拷贝到 $python_dir/Lib
@@ -20,8 +21,20 @@ easy_install package.egg
 方法4：pip 网络搜索自动安装
 先进行pip工具的安裝：easy_install pip（pip 可以通过easy_install 安裝，而且也会装到 Scripts 文件夹下D:\Python2.7\Lib\site-packages）
 
-安裝：pip install PackageName
+使用pip安装某些库可能速度较慢，可以考虑使用国内镜像，
+常见pip国内的一些镜像如下：
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+豆瓣(douban) http://pypi.douban.com/simple/
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+使用方法：
+在使用pip的时候在后面加上-i参数，指定pip源
+pip install tensorflow_gpu==1.12.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+
+安裝：pip install PackageName
+---------------------
 pip常用命令
 列出安装的packages:pip freeze
 安装特定版本的package:通过使用==, >=, <=, >, <来指定一个版本号
@@ -36,7 +49,8 @@ $ pip install ‘Markdown>2.0,<2.0.3’
 下载对应模块.whl文件，在CMD->cd命令下进入到.whl文件所在目录，如果pip目录未添加到环境变量，最好把.whl文件放置到pip.exe所在目录（D:\Python2.7\Scripts\）。
 
 安装： pip install 包名.whl
-
+下载地址：
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
 方法6：.exe文件自定义安装
 下载对应版本的exe安装文件，如numpy-1.9.2-win32-superpack-python2.7.exe和mlpy-3.5.0.win32-py2.7.exe
 安装：打开自动安装即可

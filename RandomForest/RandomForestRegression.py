@@ -12,8 +12,8 @@ import pandas as pd
 import numpy as np
 import random
 import math
-from sklearn.externals.joblib import Parallel, delayed
-
+# from sklearn.externals.joblib import Parallel, delayed
+from joblib import Parallel, delayed
 
 class Tree(object):
     """定义一棵决策树"""
