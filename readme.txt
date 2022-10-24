@@ -8,19 +8,16 @@ plt.rcParams['axes.unicode_minus'] = False       # 用来正常显示负号
 python安装库的六种方法
 方法1： 单文件模块
 直接把文件拷贝到 $python_dir/Lib
-
 方法2： 多文件模块，带setup.py
 下载模块包（压缩文件zip或tar.gz），进行解压，CMD->cd进入模块文件夹，执行：
 python setup.py install
-
 方法3：easy_install 方式
 先下载ez_setup.py,运行python ez_setup 进行easy_install工具的安装，之后就可以使用easy_install进行安装package（文件名称、资源的URL、.egg文件（python egg文件）来下载安装文件）
 easy_install packageName
 easy_install package.egg
-
 方法4：pip 网络搜索自动安装
 先进行pip工具的安裝：easy_install pip（pip 可以通过easy_install 安裝，而且也会装到 Scripts 文件夹下D:\Python2.7\Lib\site-packages）
-
+安裝：pip install PackageName
 使用pip安装某些库可能速度较慢，可以考虑使用国内镜像，
 常见pip国内的一些镜像如下：
 阿里云 http://mirrors.aliyun.com/pypi/simple/
@@ -31,9 +28,11 @@ easy_install package.egg
 使用方法：
 在使用pip的时候在后面加上-i参数，指定pip源
 pip install tensorflow_gpu==1.12.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
-
-
-安裝：pip install PackageName
+---------------------
+将所安装的库名保存到文件中：
+pip freeze > requirements.txt
+根据保存的文件库名安装：
+pip install -r requirements.txt
 ---------------------
 pip常用命令
 列出安装的packages:pip freeze
