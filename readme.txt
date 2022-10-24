@@ -1,9 +1,9 @@
 pip freeze > requirements.txt
 pip install -r requirements.txt
-
+--------------------
 plt.rcParams['font.sans-serif'] = ['SimHei']     # 用来显示中文标签
 plt.rcParams['axes.unicode_minus'] = False       # 用来正常显示负号
-
+-----------------
 
 python安装库的六种方法
 方法1： 单文件模块
