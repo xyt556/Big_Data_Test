@@ -25,5 +25,5 @@ plt.plot(x, y1)
 plt.figure(num=3, figsize=(8, 5),)
 plt.plot(x, y2)
 # plot the second curve in this figure with certain parameters
-plt.plot(x, y1, color='red', linewidth=1.0, linestyle='--')
+plt.plot(x, y1, color='red', linewidth=2.0, linestyle='--')
 plt.show()
