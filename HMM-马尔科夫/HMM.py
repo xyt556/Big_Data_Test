@@ -9,7 +9,6 @@
 from numpy import *
 
 class HMM:
-
 	def __init__(self):
 		self.A=array([(0.5,0.2,0.3),(0.3,0.5,0.2),(0.2,0.3,0.5)])
 		self.B=array([(0.5,0.5),(0.4,0.6),(0.7,0.3)])
