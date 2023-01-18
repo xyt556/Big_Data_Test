@@ -1,0 +1,6 @@
+操作说明
+1.本文件夹中自带均是附件中数据。
+2.执行请按照文件前编号按顺序执行，系统会自动生成所需数据与图像。
+（执行完所有文件之前切勿删减文件）
+3.运行环境Jupyter notebook
+需要的库（numpy,pandas,matplotlib,scipy,sklearn,xgboost,seaborn）
