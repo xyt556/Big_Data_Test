@@ -22,4 +22,4 @@ def print_pascal_triangle(n):
         print(' '.join(str(x) for x in row))
 
 # 打印 6 行的杨辉三角形
-print_pascal_triangle(6)
+print_pascal_triangle(10)
