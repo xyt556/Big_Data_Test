@@ -4,6 +4,7 @@
 # @File : correlation.py
 # @Software: PyCharm
 import pandas as pd
+from scipy import stats
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['KaiTi']
 plt.rcParams['axes.unicode_minus'] = False
@@ -18,7 +19,9 @@ y = df['Ni']
 plt.scatter(x, y)
 plt.xlabel('Pb')
 plt.ylabel('Ni')
-
+# 添加趋势线
+slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+plt.plot(x, slope*x+intercept, color='red')
 # 进行相关性分析
 correlation = x.corr(y)
 # 在图上展示相关系数
