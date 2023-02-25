@@ -18,8 +18,10 @@ y = df['Ni']
 plt.scatter(x, y)
 plt.xlabel('Pb')
 plt.ylabel('Ni')
-plt.show()
 
 # 进行相关性分析
 correlation = x.corr(y)
+# 在图上展示相关系数
+plt.text(0.9, 0.9, f'相关系数：{correlation:.2f}', transform=plt.gca().transAxes, ha='right')
 print('相关系数：', correlation)
+plt.show()
