@@ -36,9 +36,12 @@ plt.legend()
 # plt.annotate(cor_label, xy=(0.5, 0.95), xycoords='axes fraction', fontsize=12)
 # 进行相关性分析
 correlation = x.corr(y)
+cov=np.cov(x,y)
 # 在图上展示相关系数
 plt.text(0.9, 0.1, f'皮尔逊相关系数：{correlation:.2f}', transform=plt.gca().transAxes, ha='right')
+# plt.text(0.9, 0.2, f'协方差：{cov:.2f}', transform=plt.gca().transAxes, ha='right')
 print('皮尔逊相关系数：', correlation)
+print('协方差：', cov)
 plt.savefig('correlation.jpg',dpi=600)
 plt.show()
 
